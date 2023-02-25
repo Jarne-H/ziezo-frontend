@@ -1,8 +1,6 @@
 <script setup>
 //import router view
 import { useRouter, useRoute } from 'vue-router'
-// import figtree font from url 
-
 </script>
 
 <template>
@@ -12,17 +10,17 @@ import { useRouter, useRoute } from 'vue-router'
         </div>
         <div class="nav-menu">
         <ul>
-            <li>Thuispagina</li>
-            <li>Berichten</li>
-            <li>Mijn Klusjes</li>
-            <li>Profiel</li>
+            <li><img src="../public/images/icon_home.png" alt="Ziezo Home"> Thuispagina</li>
+            <li><img src="../public/images/icon_comment.png" alt="Ziezo Berichten">Berichten</li>
+            <li><img src="../public/images/icon_wrench.png" alt="Ziezo Klusjes">Mijn Klusjes</li>
+            <li><img src="../public/images/icon_user.png" alt="Ziezo Profiel">Profiel</li>
         </ul>
         </div>
         <div class="nav-details">
         <ul>
-          <li>Hulp Nodig?</li>
-          <li>Contact Info</li>
-          <li>Instellingen</li>
+          <li><img src="../public/images/icon_question-circle.png" alt="Ziezo Hulp">Hulp Nodig?</li>
+          <li><img src="../public/images/icon_info-circle.png" alt="Ziezo Contact">Contact Info</li>
+          <li><img src="../public/images/icon_cog.png" alt="Ziezo Instellingen">Instellingen</li>
         </ul>
         </div>
     </nav>
@@ -61,22 +59,26 @@ ul {
 }
 
 .nav-menu {
+  position: relative;
+  top: -304px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   gap: 4px;
   width: 180px;
   height: 172px;
-  flex: none;
   order: 1;
   flex-grow: 0;
 }
 
 .nav-details {
+  position: relative;
+  left: 0;
+  top: -100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   width: 179px;
   height: 108px;
